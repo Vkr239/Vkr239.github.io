@@ -1,0 +1,232 @@
+@font-face {
+    font-family: PFDin; /* Гарнитура шрифта */
+    src: url(../fonts/pfdintextcomppro-regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: PFDin-Bold; /* Гарнитура шрифта */
+    src: url(../fonts/pfdintextcomppro-bold.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: RobotoCondensed; /* Гарнитура шрифта */
+    src: url(../fonts/RobotoCondensed-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+/* Скрытие браузерной обводки ссылок и кнопок */
+a.active.focus,a.active:focus,a.focus,a:active.focus,a:active:focus,a:focus,
+button.active.focus,button.active:focus,button.focus,button:active.focus,button:active:focus,button:focus,
+.btn.active.focus,.btn.active:focus,.btn.focus,.btn:active.focus,.btn:active:focus,.btn:focus {
+    outline: 0!important;
+    outline-color: transparent!important;
+    outline-width: 0!important;
+    outline-style: none!important;
+    box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
+}
+
+.hamburger {
+    margin-left: 25px;
+    padding: 0;
+}
+
+.hamburger-inner, 
+.hamburger-inner:after, 
+.hamburger-inner:before {
+    width: 30px;
+    height: 3px;
+    border-radius: unset;
+    background-color: #fff;
+    transition-timing-function: ease;
+    transition-duration: .15s;
+    transition-property: transform;
+}
+
+.hamburger.is-active .hamburger-inner, 
+.hamburger.is-active .hamburger-inner:after, 
+.hamburger.is-active .hamburger-inner:before {
+    background-color: #fff;
+}
+
+/* .my-left-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #2f3032;
+    width: 176px;
+}
+
+.my-left-box .head {
+    color:#c22f04;
+    font-family: Candara; 
+    font-weight: bold;
+    font-size: 24px;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 45px; 
+    margin-bottom: -15px;
+}
+
+h1 span {
+    color:#c22f04;
+    font-family: Candara; 
+}
+
+h3 span {
+    color:#636c76;
+    font-family: Arial, Helvetica, sans-serif; 
+} */
+
+
+
+
+.navbar-container {
+    background-color: #2f3032;
+}
+
+.navbar {
+    background-color: #2f3032;
+}
+
+.navbar-brand-h1 {
+    /* color:#c22f04; */
+    /* color:#b25e45; */
+    color:#c46348;
+    font-family: Candara; 
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.navbar-brand-h2 {
+    color:#636c76;
+    font-family: RobotoCondensed;
+    font-size: 14px;
+}
+
+/* .navbar-toggler {
+    color: aliceblue;
+} */
+
+.search-form {
+    background: none;
+    border: solid 1px;
+    border-radius: 0;
+    border-color: #fff;
+    /* color: #fff; */
+    padding: 0;
+    margin: 10px 0 20px 0;
+}
+
+.search-input {
+    padding: 0;
+}
+
+.search-icon {
+    padding: 2px; 
+}
+
+.search-icon .btn {
+    color: #fff;
+}
+
+.search-input input{
+    background: none;
+    border: none;
+    font-family: PFDin;
+    font-size: 19px;
+    color: #fff;
+    padding: 2px 10px;
+    outline: none;
+}
+
+.nav-divega li {
+    height: 38px;
+    padding: 0;
+}
+
+.nav-divega li :hover {
+    background-color: #252628;
+}
+
+.nav-divega li .active {
+    /* background-color: #252628; */
+    background: url('../image/menu-bg_2.png') #252628 no-repeat;
+    background-position: left;
+}
+
+.nav-divega li a {
+    font-family: PFDin;
+    font-size: 19px;
+    color: #fff;
+    height: 38px;
+}
+
+.head-footer {
+    width: 100%;
+    /* position: relative; */
+    /* bottom: 0; */
+    /* margin-bottom: 10px; */
+}
+
+.head-footer a {
+    color: #fff;
+    margin-right: 15px;
+}
+
+.head-footer a :hover {
+    color: #00c4a1;
+}
+
+.list-hr {
+    padding: 20px 10px;
+}
+
+.list-hr hr {
+    border-color: #00c4a1;
+}
+
+@media (max-width:767px) {
+    
+}
+
+@media (min-width: 768px) {
+    .navbar-container {
+      position: sticky;
+      top: 0;
+      overflow-y: hidden ;
+      height: 100vh;
+    }
+    .navbar-container .navbar {
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      height: 100%;
+    }
+    .navbar-container .navbar-collapse {
+      align-items: flex-start;
+    }
+    .navbar-container .nav {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+    .navbar-container .navbar-nav {
+      flex-direction: column !important;
+    }
+    .head-footer {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 10px;
+        z-index: 1050;
+    }
+    .fixed-top {
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+  }

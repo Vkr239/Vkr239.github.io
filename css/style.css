@@ -187,10 +187,6 @@ h3 span {
     border-color: #00c4a1;
 }
 
-@media (max-width:767px) {
-    
-}
-
 @media (min-width: 768px) {
     .navbar-container {
       position: sticky;

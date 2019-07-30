@@ -13,6 +13,18 @@
     src: url(../fonts/RobotoCondensed-Regular.ttf); /* Путь к файлу со шрифтом */
 }
 
+::selection {
+    background: #00c4a1;
+    color: #fff;
+    text-shadow: none;
+  }
+  
+  ::-moz-selection {
+    background: #00c4a1;
+    color: #fff;
+    text-shadow: none;
+  }
+
 /* Скрытие браузерной обводки ссылок и кнопок */
 a.active.focus,a.active:focus,a.focus,a:active.focus,a:active:focus,a:focus,
 button.active.focus,button.active:focus,button.focus,button:active.focus,button:active:focus,button:focus,
@@ -185,6 +197,39 @@ h3 span {
 
 .list-hr hr {
     border-color: #00c4a1;
+}
+
+.news-img {
+    background-color: #c46348;
+    margin-bottom: 10px;
+}
+
+.news-text {
+    border: 1px solid silver;
+    padding: 15px;
+    text-align: justify;
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.news-text  p {
+    text-indent: 25px;
+    font-size: 16px;
+    font-family: PFDin;
+    word-wrap: normal;
+    max-height: 165px;
+    overflow: hidden;
+}
+
+.news-text  button {
+    font-size: 16px;
+    font-family: PFDin;
+    width: 135px;
+    height: 35px;
+    background: #00c4a1;
+    color: #fff;
+    border: none;
 }
 
 @media (min-width: 768px) {

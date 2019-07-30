@@ -232,6 +232,13 @@ h3 span {
     border: none;
 }
 
+.news-text  button:hover {
+    background: #fff;
+    color: #00c4a1;
+    /* font-weight: bold; */
+    border: 2px solid;
+}
+
 @media (min-width: 768px) {
     .navbar-container {
       position: sticky;
